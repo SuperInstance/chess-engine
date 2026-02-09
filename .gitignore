@@ -1,0 +1,8 @@
+# Rust build artifacts
+/target/
+/target2/
+**/*.rs.bk
+*.pdb
+
+# Cargo.lock (uncomment if not a library)
+# Cargo.lock

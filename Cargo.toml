@@ -1,0 +1,37 @@
+[package]
+name = "vdmo"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "vdmo chess engine (Rust rewrite)"
+repository = "https://github.com/vdmo/chess"
+publish = false
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[profile.dev]
+panic = "abort"
+
+[features]
+default = ["uci"]
+uci = []
+perft = []
+trace = []
+
+[dependencies]
+eframe = "0.27"
+egui = "0.27"
+
+[dev-dependencies]
+# Add test helpers later if needed.
+
+[[bin]]
+name = "vdmo"
+path = "src/main.rs"
+
+[[bin]]
+name = "vdmo-chess-gui"
+path = "src/bin/vdmo-chess-gui.rs"
