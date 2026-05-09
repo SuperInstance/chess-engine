@@ -1,5 +1,15 @@
 # VDMO Chess Engine
 
+
+## Meta
+
+**Domain:** tools
+**Depends on:** —
+**Depended by:** —
+**Implements:** Rust chess engine (forked from vdmo/chess) — transposition table patterns for gu...
+**Related:** —
+
+
 A chess engine written in Rust with a focus on correctness and clarity.
 
 ## Features
